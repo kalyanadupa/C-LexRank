@@ -149,7 +149,7 @@ public class driverProgram {
                                (results.scores.get(items.get(i)) / max));
             sum[i] = (results.scores.get(items.get(i)) / max);
         }
-        System.out.println("\n ** printing scores of crybaby:");
+        System.out.println("\n ** printing scores:");
         printScore(sum);
         
         int[] degree = new int[similarity.length];
@@ -181,31 +181,31 @@ public class driverProgram {
     void printScore(double sum[]){
         
         if((sum[1] > sum [4]) && (sum[1] > sum[5]) ){
-            System.out.println("among 2,5,6 => 2");
+            System.out.println("among 1 4 5 => 1");
         }
         if((sum[4] > sum [1]) && (sum[4] > sum[5]) ){
-            System.out.println("among 2,5,6 => 5");
+            System.out.println("among 1 4 5 => 4");
         }
         if((sum[5] > sum [1]) && (sum[5] > sum[4]) ){
-            System.out.println("among 2,5,6 => 6");
+            System.out.println("among 1 4 5 => 5");
         }
         if((sum[2] > sum [6]) && (sum[2] > sum[8]) ){
-            System.out.println("among 3,7,9 => 3");
+            System.out.println("among 2 6 8 => 2");
         }
         if((sum[6] > sum [2]) && (sum[6] > sum[8]) ){
-            System.out.println("among 3,7,9 => 7");
+            System.out.println("among 2 6 8 => 6");
         }
         if((sum[8] > sum [2]) && (sum[8] > sum[6]) ){
-            System.out.println("among 3,7,9 => 9");
+            System.out.println("among 2 6 8 => 8");
         }
         if((sum[3] > sum [0]) && (sum[3] > sum[7]) ){
-            System.out.println("among 4,1,8 => 4");
+            System.out.println("among 3 0 7 => 3");
         }
         if((sum[0] > sum [3]) && (sum[0] > sum[7]) ){
-            System.out.println("among 4,1,8 => 1");
+            System.out.println("among 3 0 7 => 0");
         }
         if((sum[7] > sum [3]) && (sum[7] > sum[0]) ){
-            System.out.println("among 4,1,8 => 8");
+            System.out.println("among 3 0 7 => 7");
         }
     }
 }

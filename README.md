@@ -1,9 +1,9 @@
-C-LexRank
+# C-LexRank
 =========
 
-This project is the implementation of a Generating Extractive Summaries of Scientific Paradigms (Vahed Qazvinian, Dragomir R. Radev) which used Lex Rank Algorithm given in  "LexRank: Graph-based Lexical Centrality as Salience in Text Summarization" (Gune ¨ ¸s Erkan and Radev)
+This project is the implementation of a Generating Extractive Summaries of Scientific Paradigms (Vahed Qazvinian, Dragomir R. Radev) which used Lex Rank Algorithm given in  "LexRank: Graph-based Lexical Centrality as Salience in Text Summarization" (Erkan and Radev)
 
-It has three phases: 
+###### It has three phases: 
 
 1. Finding the Cosine similarity of each node pair in the document and forming the weighted edge graph having each sentence in the graph as node.
 
